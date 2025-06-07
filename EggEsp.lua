@@ -1,1 +1,1 @@
-print("patched.")
+game.Players.LocalPlayer:Kick("patched")
