@@ -95,5 +95,4 @@ local function dupeToolInBackPack()
     end
 end
 
--- Simple way to execute the function (you can bind this to a key or use in other ways)
 dupeToolInBackPack()
