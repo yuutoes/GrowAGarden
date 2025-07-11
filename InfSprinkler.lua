@@ -1,4 +1,4 @@
--- Made by yuutoes. [20% AI]
+-- Made by yuutoes.
 
 local l,j,Q,p=pairs,type,getmetatable,table.unpack;
 local q,x,J,R,L,b,G,c,A,M,e
