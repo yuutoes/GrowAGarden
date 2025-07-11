@@ -213,7 +213,6 @@ local function hatchTargetEggs()
 	end
 end
 
--- Server age filtering and teleport logic
 local function isServerFullError()
     local errorPrompt = coreGui:FindFirstChild("ErrorPrompt")
     if errorPrompt and errorPrompt:FindFirstChild("Title") then
@@ -243,7 +242,6 @@ local function checkDone()
         local filtered = {}
         
         for _, jobId in ipairs(jobIds) do
-            -- Decode job ID timestamp (approximate method)
             local timestamp = tonumber(jobId:sub(1, 8), 16)
             local serverAgeHours = (now - timestamp) / 3600
             
@@ -278,7 +276,6 @@ local function checkDone()
             end
         end
         
-        -- Fallback to new server if no old servers found
         teleportService:Teleport(game.PlaceId, localPlayer)
         RejoinWebhook()
         task.wait(2)
